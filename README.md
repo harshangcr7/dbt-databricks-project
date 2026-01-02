@@ -31,14 +31,12 @@ The final output is a **One Big Table (OBT)** designed for BI tools such as **Ta
 
 ## Data Architecture
 CSV Source Files
-|
-v
+>>
 +----------------+
 | Bronze |
 | Raw Ingest |
 +----------------+
-|
-v
+>>
 +-----------------------------+
 | Silver |
 | - Deduplication |
@@ -46,8 +44,7 @@ v
 | - Minor transformations |
 | - dbt snapshots (SCD 2) |
 +-----------------------------+
-|
-v
+>>
 +-------------------------------------+
 | Gold |
 | One Big Table (OBT) |
@@ -86,6 +83,7 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
 
 
