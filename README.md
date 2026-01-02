@@ -12,7 +12,7 @@ The project uses a **CSV-based customer dataset** loaded into Databricks and mod
 - dates
 
 The final output is a **One Big Table (OBT)** designed for BI tools such as **Tableau** to analyze key business KPIs.
-
+[Gold_OBT.jpg](https://github.com/harshangcr7/dbt-databricks-project/blob/cbd33e997da2ddd1a63faaa31cc6280c63463227/Gold_OBT.jpg)
   
 
 ## Tech Stack
@@ -31,20 +31,7 @@ The final output is a **One Big Table (OBT)** designed for BI tools such as **Ta
 - Analytics-focused data modeling
 
 ## Data Architecture
-Databricks Source Files
->>
-| Bronze |
-| Raw Ingest |
->>
-| Silver |
-| - Deduplication |
-| - Type casting |
-| - Minor transformations |
-| - dbt snapshots (SCD 2) |
->>
-| Gold |
-| One Big Table (OBT) |
-| Analytics & BI-ready |
+https://github.com/harshangcr7/dbt-databricks-project/blob/cefeb2a3eca6b43328e69fc0ef8f6b1cc2d8e548/Architecture.png
 
 ## Layer Details
 
@@ -77,6 +64,7 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
 
 
