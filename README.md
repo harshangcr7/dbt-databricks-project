@@ -1,7 +1,7 @@
 # dbt Databricks Analytical Pipeline Project
 
 ## Overview
-End-to-end analytics project built using **dbt on Databricks**, following modern **Bronze → Silver → Gold** data architecture for both Development and Production environments.
+End-to-end analytical CI/CD pipeline project built using **dbt on Databricks**, following modern **Bronze → Silver → Gold** data architecture for both Development and Production environments.
 
 The project uses a **CSV-based customer dataset** loaded into Databricks and models a retail domain including:
 - customers
@@ -64,6 +64,7 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
 
 
