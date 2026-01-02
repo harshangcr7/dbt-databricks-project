@@ -12,7 +12,7 @@ The project uses a **CSV-based customer dataset** loaded into Databricks and mod
 - dates
 
 The final output is a **One Big Table (OBT)** designed for BI tools such as **Tableau** to analyze key business KPIs.
-Screenshot in files - gold_OBT.jpg
+  Screenshot in files - gold_OBT.jpg
 
 ## Tech Stack
 - Databricks (Delta Lake)
@@ -86,6 +86,7 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
 
 
