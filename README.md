@@ -36,7 +36,7 @@ https://github.com/harshangcr7/dbt-databricks-project/blob/cefeb2a3eca6b43328e69
 ## Layer Details
 
 ### Bronze
-- Raw ingestion of CSV data into Databricks
+- Raw ingestion of data from Databricks to dbt
 - No business logic applied
 - Preserves source structure
 
@@ -64,6 +64,7 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
 
 
