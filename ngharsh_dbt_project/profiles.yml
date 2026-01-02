@@ -1,0 +1,21 @@
+ngharsh_dbt_project:
+  outputs:
+    dev:
+      catalog: 'dbt_dev'
+      host: dbc-29d09e73-abc8.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/c8a9e44115249783
+      schema: default
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+
+    dev:
+      catalog: 'dbt_prod'
+      host: dbc-29d09e73-abc8.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/c8a9e44115249783
+      schema: default
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+
+  target: dev
