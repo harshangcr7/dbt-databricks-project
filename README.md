@@ -1,4 +1,4 @@
-# Databricks dbt Analytics Project
+# dbt Databricks Analytics Project
 
 ## Overview
 End-to-end analytics project built using **dbt on Databricks**, following modern **Bronze → Silver → Gold** data architecture for both Development and Production environments.
@@ -64,6 +64,7 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
 
 
