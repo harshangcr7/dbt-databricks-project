@@ -1,7 +1,7 @@
 # Databricks dbt Analytics Project
 
 ## Overview
-End-to-end analytics project built using **dbt on Databricks**, following modern **Bronze → Silver → Gold** data architecture.
+End-to-end analytics project built using **dbt on Databricks**, following modern **Bronze → Silver → Gold** data architecture for both Development and Production environments.
 
 The project uses a **CSV-based customer dataset** loaded into Databricks and models a retail domain including:
 - customers
@@ -25,6 +25,7 @@ The final output is a **One Big Table (OBT)** designed for BI tools such as **Ta
 - Reusable macros
 - Data quality tests
 - Secure handling of secrets via environment variables
+- Can execute for Dev and Prod environments
 - Analytics-focused data modeling
 
 ## Data Architecture
@@ -84,4 +85,5 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
