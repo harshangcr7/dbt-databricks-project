@@ -30,8 +30,8 @@ The final output is a **One Big Table (OBT)** designed for BI tools such as **Ta
 - Analytics-focused data modeling
 
 ## Data Architecture
-CSV Source Files
->>>
+Databricks Source Files
+>>
 | Bronze |
 | Raw Ingest |
 >>
@@ -76,6 +76,7 @@ To execute the models, the following environment variables are required:
 > Credentials are intentionally **not committed** to the repository for security reasons.
 
 dbt build
+
 
 
 
