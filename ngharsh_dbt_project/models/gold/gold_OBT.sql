@@ -27,7 +27,6 @@ select
 from {{ ref('silver_fact_sales') }} fs
 left join {{ ref('customers_snapshot') }} c
     on fs.customer_sk = c.customer_sk
-    and fs.date >= c.dbt_valid_from
     and fs.date < c.dbt_valid_to
 left join {{ ref('silver_dim_product') }} p
     on fs.product_sk = p.product_sk
